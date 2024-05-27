@@ -10,7 +10,7 @@ resource "aws_instance" "ami_kms" {
   ami           = "ami-0a240a5c4a9a12eec"  # Replace with your encrypted AMI ID
   instance_type = "t2.small"
   key_name               = "on"
-  vpc_security_group_ids = ["sg-0eb847be8a6624b54"]
+  vpc_security_group_ids = ["sg-05a8229081657059c"]
   ebs_block_device {
     device_name           = "/dev/xvda"
     volume_type           = "gp2"
