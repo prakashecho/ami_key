@@ -23,5 +23,5 @@ resource "aws_instance" "ami_kms" {
 
 # Output the public IP address of the instance
 output "instance_public_ip" {
-  value = aws_instance.example.public_ip
+  value = aws_instance.ami_kms.public_ip
 }
