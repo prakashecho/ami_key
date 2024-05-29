@@ -19,7 +19,7 @@ resource "aws_instance" "ami_kms" {
   }
 
   tags = {
-    Name = "ExampleInstance"
+    Name = "Instance"
   }
 }
 
