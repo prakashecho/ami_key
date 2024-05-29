@@ -10,14 +10,7 @@ resource "aws_instance" "ami_kms" {
   key_name               = "pra"  # Replace with your key pair name
   vpc_security_group_ids = ["sg-05a8229081657059c"]  # Replace with your security group ID(s)
 
-  ebs_block_device {
-    device_name  = "/dev/xvda"
-    volume_type  = "gp2"
-    volume_size  = 8
-    encrypted    = true
-    kms_key_id   = "22ad3ccd-28a1-4d05-ad73-5f284cea93b3"  # Specify the KMS key ID used for encryption
-  }
-
+  
   tags = {
     Name = "Instance"
   }
