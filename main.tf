@@ -1,6 +1,6 @@
 # Configure the AWS provider
 provider "aws" {
-  region = "us-east-1"  # Replace with your desired AWS region
+  region = "us-east-1"  # Replace with your desired AWS 
 }
 
 # Define the EC2 instance with encrypted EBS volume
