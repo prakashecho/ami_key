@@ -5,7 +5,7 @@ provider "aws" {
 
 # Define the EC2 instance with encrypted EBS volume
 resource "aws_instance" "ami_kms" {
-  ami                    = "ami-0eb762d475e2bfe8a"  # Replace with your encrypted AMI ID
+  ami                    = "ami-081649c240df9e1d9"  # Replace with your encrypted AMI ID
   instance_type          = "t2.small"
   key_name               = "pra"  # Replace with your key pair name
   vpc_security_group_ids = ["sg-05a8229081657059c"]  # Replace with your security group ID(s)
